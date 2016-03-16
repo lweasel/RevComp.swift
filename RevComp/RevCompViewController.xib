@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RevCompViewController" customModule="RevComp" customModuleProvider="target">
+            <connections>
+                <outlet property="complementCheckbox" destination="xfg-bb-tFS" id="Ovo-2d-WN6"/>
+                <outlet property="inputField" destination="Fga-qz-jdg" id="iIa-vO-t2t"/>
+                <outlet property="menuButton" destination="4mW-d3-Hby" id="cbf-6G-Qkj"/>
+                <outlet property="outputField" destination="Pjz-gy-luW" id="OpX-IE-1SF"/>
+                <outlet property="quitButton" destination="4mW-d3-Hby" id="JhH-3P-ykR"/>
+                <outlet property="reverseCheckbox" destination="oV8-UT-yve" id="Ind-oJ-gMD"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="oV8-UT-yve">
+                    <rect key="frame" x="18" y="18" width="181" height="25"/>
+                    <buttonCell key="cell" type="check" title="Reverse" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="hY4-bk-jnk">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkReverse:" target="-2" id="7b7-5i-s4y"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCU-t7-KOU">
+                    <rect key="frame" x="161" y="-164" width="189" height="107"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rit-JL-Zx5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-qz-jdg">
+                    <rect key="frame" x="20" y="108" width="440" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IzQ-Ko-7NK"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="HPo-KZ-JBv">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="inputTextFieldAction:" target="-2" id="7x1-jm-K9Q"/>
+                    </connections>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="xfg-bb-tFS">
+                    <rect key="frame" x="203" y="18" width="181" height="26"/>
+                    <buttonCell key="cell" type="check" title="Complement" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wDD-5l-3yF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkComplement:" target="-2" id="F4d-hH-eeI"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pjz-gy-luW">
+                    <rect key="frame" x="20" y="50" width="440" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lO7-uv-1YF"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QZt-O2-cMy">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4mW-d3-Hby">
+                    <rect key="frame" x="384" y="13" width="82" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Lb4-WH-f8x"/>
+                        <constraint firstAttribute="height" constant="22" id="hS9-hh-Khd"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="VM8-Ru-Oiv">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quitApp:" target="-2" id="o2I-Ag-Wuy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Pjz-gy-luW" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="5tX-Mj-L8q"/>
+                <constraint firstItem="4mW-d3-Hby" firstAttribute="centerY" secondItem="xfg-bb-tFS" secondAttribute="centerY" id="6Hi-qz-QY0"/>
+                <constraint firstAttribute="bottom" secondItem="xfg-bb-tFS" secondAttribute="bottom" constant="20" symbolic="YES" id="AKw-Z4-qXu"/>
+                <constraint firstAttribute="trailing" secondItem="Fga-qz-jdg" secondAttribute="trailing" constant="20" symbolic="YES" id="Bem-QS-F6Y"/>
+                <constraint firstItem="xfg-bb-tFS" firstAttribute="leading" secondItem="oV8-UT-yve" secondAttribute="trailing" constant="8" symbolic="YES" id="GPT-h3-wqY"/>
+                <constraint firstItem="Pjz-gy-luW" firstAttribute="top" secondItem="Fga-qz-jdg" secondAttribute="bottom" constant="14" id="IiN-M5-uDb"/>
+                <constraint firstItem="xfg-bb-tFS" firstAttribute="top" secondItem="Pjz-gy-luW" secondAttribute="bottom" constant="8" symbolic="YES" id="LRh-dx-tc1"/>
+                <constraint firstItem="xfg-bb-tFS" firstAttribute="centerY" secondItem="oV8-UT-yve" secondAttribute="centerY" id="OOI-gX-mbE"/>
+                <constraint firstAttribute="trailing" secondItem="Pjz-gy-luW" secondAttribute="trailing" constant="20" symbolic="YES" id="Q77-Uf-7Ic"/>
+                <constraint firstAttribute="bottom" secondItem="4mW-d3-Hby" secondAttribute="bottom" constant="20" symbolic="YES" id="Rms-HJ-qxA"/>
+                <constraint firstItem="Fga-qz-jdg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="TPP-da-d31"/>
+                <constraint firstItem="4mW-d3-Hby" firstAttribute="leading" secondItem="xfg-bb-tFS" secondAttribute="trailing" constant="8" symbolic="YES" id="Vx9-XB-ny9"/>
+                <constraint firstItem="oV8-UT-yve" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="cUX-sC-vgm"/>
+                <constraint firstAttribute="trailing" secondItem="4mW-d3-Hby" secondAttribute="trailing" constant="20" symbolic="YES" id="h5t-3Z-wma"/>
+                <constraint firstItem="xfg-bb-tFS" firstAttribute="width" secondItem="oV8-UT-yve" secondAttribute="width" id="o3F-Gm-Exg"/>
+                <constraint firstAttribute="bottom" secondItem="oV8-UT-yve" secondAttribute="bottom" constant="20" symbolic="YES" id="psl-tG-esi"/>
+                <constraint firstItem="Fga-qz-jdg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="qax-sH-aiN"/>
+            </constraints>
+            <point key="canvasLocation" x="673" y="435"/>
+        </customView>
+    </objects>
+</document>

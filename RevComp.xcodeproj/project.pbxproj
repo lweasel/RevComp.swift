@@ -12,6 +12,9 @@
 		BA3F744F1C91D080004BDA73 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F744D1C91D080004BDA73 /* MainMenu.xib */; };
 		BA3F745A1C91D080004BDA73 /* RevCompTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F74591C91D080004BDA73 /* RevCompTests.swift */; };
 		BA3F74651C91D080004BDA73 /* RevCompUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F74641C91D080004BDA73 /* RevCompUITests.swift */; };
+		BA9844931C92F7CA00688C7F /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9844921C92F7CA00688C7F /* EventMonitor.swift */; };
+		BA9844961C92FBD800688C7F /* RevCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9844941C92FBD800688C7F /* RevCompViewController.swift */; };
+		BA9844971C92FBD800688C7F /* RevCompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9844951C92FBD800688C7F /* RevCompViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BA1249501C9879060026A845 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BA3F74461C91D07F004BDA73 /* RevComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3F74491C91D07F004BDA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +58,9 @@
 		BA3F74601C91D080004BDA73 /* RevCompUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevCompUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3F74641C91D080004BDA73 /* RevCompUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevCompUITests.swift; sourceTree = "<group>"; };
 		BA3F74661C91D080004BDA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9844921C92F7CA00688C7F /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		BA9844941C92FBD800688C7F /* RevCompViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevCompViewController.swift; sourceTree = "<group>"; };
+		BA9844951C92FBD800688C7F /* RevCompViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RevCompViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,9 @@
 				BA3F744B1C91D07F004BDA73 /* Assets.xcassets */,
 				BA3F744D1C91D080004BDA73 /* MainMenu.xib */,
 				BA3F74501C91D080004BDA73 /* Info.plist */,
+				BA9844921C92F7CA00688C7F /* EventMonitor.swift */,
+				BA9844941C92FBD800688C7F /* RevCompViewController.swift */,
+				BA9844951C92FBD800688C7F /* RevCompViewController.xib */,
 			);
 			path = RevComp;
 			sourceTree = "<group>";
@@ -129,6 +150,7 @@
 				BA3F74421C91D07F004BDA73 /* Sources */,
 				BA3F74431C91D07F004BDA73 /* Frameworks */,
 				BA3F74441C91D07F004BDA73 /* Resources */,
+				BA1249501C9879060026A845 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -223,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9844971C92FBD800688C7F /* RevCompViewController.xib in Resources */,
 				BA3F744C1C91D07F004BDA73 /* Assets.xcassets in Resources */,
 				BA3F744F1C91D080004BDA73 /* MainMenu.xib in Resources */,
 			);
@@ -249,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9844961C92FBD800688C7F /* RevCompViewController.swift in Sources */,
 				BA3F744A1C91D07F004BDA73 /* AppDelegate.swift in Sources */,
+				BA9844931C92F7CA00688C7F /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +496,7 @@
 				BA3F746B1C91D080004BDA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA3F746C1C91D080004BDA73 /* Build configuration list for PBXNativeTarget "RevCompTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +505,7 @@
 				BA3F746E1C91D080004BDA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA3F746F1C91D080004BDA73 /* Build configuration list for PBXNativeTarget "RevCompUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +514,7 @@
 				BA3F74711C91D080004BDA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

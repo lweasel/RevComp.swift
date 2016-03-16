@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>RevComp Helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RevComp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BA1249241C9877620026A845</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA1249321C9877620026A845</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA12493D1C9877620026A845</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BA3F74451C91D07F004BDA73</key>
 		<dict>
 			<key>primary</key>
