@@ -13,6 +13,9 @@ class RevCompViewController: NSViewController {
     // controls whether input sequence should be complemented
     @IBOutlet var complementCheckbox: NSButton!
     
+    let complementDict: [Character: Character] = [
+        "A": "T", "T": "A", "C": "G", "G": "C", "N": "N"]
+    
     // executed when reverse checkbox is clicked
     @IBAction func checkReverse(sender: NSButton) {
         updateOutput()
@@ -39,34 +42,14 @@ class RevCompViewController: NSViewController {
     func updateOutput() {
         var input = inputField.stringValue.uppercaseString
         
-        input = String(input.characters.map {
-            switch $0 {
-            case "A", "C", "G", "T":
-                return $0
-            default:
-                return "N"
-            }
-        })
+        input = String(input.characters.map { return complementDict[$0] != nil ? $0 : "N" })
         
         if reverseCheckbox.state == NSOnState {
             input = String(input.characters.reverse())
         }
         
         if complementCheckbox.state == NSOnState {
-            input = String(input.characters.map {
-                switch $0 {
-                case "A":
-                    return "T"
-                case "T":
-                    return "A"
-                case "C":
-                    return "G"
-                case "G":
-                    return "C"
-                default:
-                    return "N"
-                }
-            })
+            input = String(input.characters.map { return complementDict[$0]! })
         }
         
         outputField.stringValue = input
