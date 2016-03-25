@@ -1,5 +1,9 @@
 import Cocoa
 
+/*
+* A general purpose event monitor. From:
+* https://www.raywenderlich.com/98178/os-x-tutorial-menus-popovers-menu-bar-apps
+*/
 public class EventMonitor {
     private var monitor: AnyObject?
     private let mask: NSEventMask
